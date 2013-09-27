@@ -50,7 +50,8 @@ var wordlistHtmlForCategory = function(categoryName) {
   })[0];
 
   return wordlistTemplate({
-    phrases: category.phrases
+    phrases: category.phrases,
+    title: category.title
   });
 };
 

@@ -34,7 +34,10 @@
     <script id="wordlist-template" type="text/handlebars">
       <div data-role="page" id="wordlist">
           <div data-theme="a" data-role="header">
-              <h3>Doze Poa</h3>
+              <a href="#homepage" data-transition="slide" data-rel="back">
+                  Overview
+              </a>
+              <h3>{{title}}</h3>
           </div>
           <div data-role="content">
               <ul data-role="listview" data-divider-theme="b" data-inset="true">
