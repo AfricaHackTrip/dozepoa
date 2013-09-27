@@ -27,4 +27,20 @@
       {swahili: "[place] iko wapi", english: "Where is [place]?", answer: ["kushoto - left", "kulia - right", "tembea tu - keep on walking", "rudi - go back"], explanation: ""}
     ]
   },
+  {
+    icon: 'shopping.png', title: 'Ku-shop', english_title: 'Shopping', phrases: [
+      {swahili: "[fish] ni how much?", english: "how much is the [fish]?", answer: [], explanation: "yes, it is really kind english"},
+      {swahili: "[fish] ina uzwa ngapi?", english: "how much is the [fish]?", answer: [], explanation: ""},
+      {swahili: "[fish] ni expe sana", english: "That [fish] is way too expensive?", answer: [], explanation: ""}
+    ]
+  },
+  {
+    icon: 'ei.png', title: 'Ei...?!', english_title: 'What the..?!', phrases: [
+      {swahili: "Ei...", english: "What the...?", answer: [], explanation: ""},
+      {swahili: "Eishhhh", english: "ouch!", answer: [], explanation: ""},
+      {swahili: "wa wa wa", english: "expresion of being surprised", answer: [], explanation: ""}
+    ]
+  }
 ]
+
+
