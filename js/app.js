@@ -1,8 +1,9 @@
+var Dozepoa = {};
 var categoriesTemplate = Handlebars.compile($('#nav-template').html());
 var phrasesTemplate = Handlebars.compile($('#phrases-template').html());
 var phraseTemplate = Handlebars.compile($('#phrase-template').html());
 
-var content = {
+Dozepoa.content = {
   categories: [
     {name: "salamz", title: 'Salamz', english_title: 'Greetings', gridPosition: "a", phrases: [
       {swahili: "Mambo", english: "How are you?", answer: ["Poa - Cool", "Niko poa - I'm fine"], explanation: "maybe the most common greeting to start a great conversation"},
@@ -39,14 +40,14 @@ var content = {
   ]
 };
 
-var navHtml = categoriesTemplate(content);
+var navHtml = categoriesTemplate(Dozepoa.content);
 
 var phrasesHtml = phrasesTemplate({
-  phrases: content.categories[0]["phrases"]
+  phrases: Dozepoa.content.categories[0]["phrases"]
 });
 
 var phrasesHtmlForCategory = function(categoryName) {
-  var category = $.grep( content.categories, function( category, index ) {
+  var category = $.grep( Dozepoa.content.categories, function( category, index ) {
     return category.name === categoryName;
   })[0];
 
@@ -57,7 +58,7 @@ var phrasesHtmlForCategory = function(categoryName) {
 };
 
 var findPhrase = function(swahili) {
-  return _.chain(content.categories)
+  return _.chain(Dozepoa.content.categories)
     .map(function(category) {
       return category.phrases;
     })
