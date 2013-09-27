@@ -33,7 +33,7 @@ var content = {
     pickup: {title: 'Mambo m-super', english_title: 'Pickup lines',gridPosition: "b", phrases: [
       {swahili: "Mambo m-super", english: "Hey gorgeous", answer: [], explanation: "Only when adressing girls!"},
       {swahili: "Mambo handsome", english: "Hey gorgeous", answer: [], explanation: "Only when adressing guys!"},
-      {swahili: "", english: "Hey gorgeous", answer: [], explanation: "Only when adressing guys!"},
+      {swahili: "We ni kuitaje?", english: "How do I call you?", answer: [], explanation: "Only when adressing guys!"},
     ]}
   ]
 };
