@@ -19,10 +19,21 @@ var content = {
       {swahili: "Naeza fika vipi [your place]?", english: "How do I get to [your place]?", answer: [], explanation: ""},
       {swahili: "[place] iko wapi", english: "Where is [place]?", answer: [], explanation: ""}
     ]},
-    {name: "shopping", title: 'Ku-shop', english_title: 'Shopping', gridPosition: "b", phrases: [
+    whatthe: {title: 'Ei...?!', english_title: 'What the..?!', gridPosition: "b",  phrases: [
+      {swahili: "Ei...", english: "What the...?", answer: [], explanation: ""},
+      {swahili: "Eishhhh", english: "ouch!", answer: [], explanation: ""},
+      {swahili: "wa wa wa", english: "expresion of being surprised", answer: [], explanation: ""},
+      {swahili: "Kwenda uko",english: "get outta here", answer: [], explanation: ""}
+    ]},
+    shopping: {title: 'Ku-shop', english_title: 'Shopping', gridPosition: "a", phrases: [
       {swahili: "[fish] ni how much?", english: "how much is the [fish]?", answer: [], explanation: "yes, it is really kind english"},
       {swahili: "[fish] ina uzwa ngapi?", english: "how much is the [fish]?", answer: [], explanation: ""},
       {swahili: "[fish] ni expe sana", english: "That [fish] is way too expensive?", answer: [], explanation: ""}
+    ]},
+    pickup: {title: 'Mambo m-super', english_title: 'Pickup lines',gridPosition: "b", phrases: [
+      {swahili: "Mambo m-super", english: "Hey gorgeous", answer: [], explanation: "Only when adressing girls!"},
+      {swahili: "Mambo handsome", english: "Hey gorgeous", answer: [], explanation: "Only when adressing guys!"},
+      {swahili: "", english: "Hey gorgeous", answer: [], explanation: "Only when adressing guys!"},
     ]}
   ]
 };
