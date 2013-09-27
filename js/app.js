@@ -1,5 +1,6 @@
 var categoriesTemplate = Handlebars.compile($('#nav-template').html());
-var wordlistTemplate = Handlebars.compile($('#wordlist-template').html());
+var phrasesTemplate = Handlebars.compile($('#phrases-template').html());
+var phraseTemplate = Handlebars.compile($('#phrase-template').html());
 
 var content = {
   categories: [
@@ -40,28 +41,51 @@ var content = {
 
 var navHtml = categoriesTemplate(content);
 
-var wordlistHtml = wordlistTemplate({
+var phrasesHtml = phrasesTemplate({
   phrases: content.categories[0]["phrases"]
 });
 
-var wordlistHtmlForCategory = function(categoryName) {
+var phrasesHtmlForCategory = function(categoryName) {
   var category = $.grep( content.categories, function( category, index ) {
     return category.name === categoryName;
   })[0];
 
-  return wordlistTemplate({
+  return phrasesTemplate({
     phrases: category.phrases,
     title: category.title
   });
 };
 
+var findPhrase = function(swahili) {
+  return _.chain(content.categories)
+    .map(function(category) {
+      return category.phrases;
+    })
+    .flatten()
+    .find(function(phrase) {
+      return phrase.swahili === swahili;
+    }).value();
+};
+
+var phraseHtml = function(phrase) {
+  return phraseTemplate(phrase);
+};
+
 $('body').append(navHtml);
-$('body').append(wordlistHtml);
+$('body').append(phrasesHtml);
 
 $('#homepage a').on("click", function(){
-  var categoryName = $(this).data('category');
-  console.log(categoryName);
+  var categoryTitle = $(this).data('category');
 
-  $('#wordlist').remove();
-  $('body').append(wordlistHtmlForCategory(categoryName));
+  $('#phrases').remove();
+  $('body').append(phrasesHtmlForCategory(categoryTitle));
+});
+
+$(document).on('click', '#phrases a[rel=phrase]', function(e) {
+  e.preventDefault();
+
+  var phraseTitle = $(this).data('phrase');
+  var phrase = findPhrase(phraseTitle);
+
+  $(this).next('[rel=explanation]').html(phraseHtml(phrase));
 });

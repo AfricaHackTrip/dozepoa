@@ -16,7 +16,7 @@
              <div class="ui-grid-a">
                 {{#each categories}}
                   <div class="ui-block-{{gridPosition}}">
-                    <a href="#wordlist" data-transition="slide" data-category="{{name}}">
+                    <a href="#phrases" data-transition="slide" data-category="{{name}}">
                       <img src="{{icon}}"/>
                       <p><strong>{{title}}</strong></p>
                       <p>{{english_title}}</p>
@@ -31,8 +31,8 @@
       </div>
     </script>
 
-    <script id="wordlist-template" type="text/handlebars">
-      <div data-role="page" id="wordlist">
+    <script id="phrases-template" type="text/handlebars">
+      <div data-role="page" id="phrases">
           <div data-theme="a" data-role="header">
               <a href="#homepage" data-transition="slide" data-rel="back">
                   Overview
@@ -43,10 +43,11 @@
               <ul data-role="listview" data-divider-theme="b" data-inset="true">
                 {{#each phrases}}
                   <li data-theme="c">
-                      <a href="#" data-transition="slide">
+                      <a href="#" data-phrase="{{swahili}}" rel="phrase">
                         {{swahili}}<br />
                         {{english}}
                       </a>
+                      <div rel="explanation"></div>
                   </li>
                 {{/each}}
               </ul>
@@ -54,9 +55,14 @@
       </div>
     </script>
 
+    <script id="phrase-template" type="text/handlebars">
+      <a href="#" class="ui-link-inherit">{{explanation}}</a>
+    </script>
+
     <script src="js/jquery.js"></script>
     <script src="js/jquery.mobile-1.3.2.min.js"></script>
     <script src="js/handlebars.js"></script>
+    <script src="js/underscore.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>
