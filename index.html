@@ -59,7 +59,7 @@
     </script>
 
     <script id="phrase-template" type="text/handlebars">
-      <a href="#" class="ui-link-inherit">{{explanation}}</a>
+      <a href="#" class="ui-link-inherit">{{#if explanation}}{{explanation}}{{else}}[explanation]{{/if}}</a>
     </script>
 
     <script src="js/jquery.js"></script>
