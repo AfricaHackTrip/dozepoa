@@ -2,8 +2,23 @@ body {
   font-family: Ubuntu;
 }
 
-nav li {
-  background: pink
+.swahili, .english {
+	color: #000;
+	text-decoration: none !important;
+}
+
+.swahili {
+	font-weight: bold;
+	font-size: 2em;
+}
+
+#homepage .swahili {
+	line-height: 0;
+	margin-top: .8em;
+}
+
+#homepage .english {
+	line-height: 0;
 }
 
 .ui-block-a, .ui-block-b {

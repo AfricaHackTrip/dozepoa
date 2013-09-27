@@ -18,8 +18,8 @@
                   <div class="ui-block-{{gridPosition}}">
                     <a href="#phrases" data-transition="slide" data-category="{{name}}">
                       <img src="img/{{name}}.svg"/>
-                      <p><strong>{{title}}</strong></p>
-                      <p>{{english_title}}</p>
+                      <p class="swahili">{{title}}</p>
+                      <p class="english">{{english_title}}</p>
                     </a>
                   </div>
                 {{/each}}
@@ -44,8 +44,8 @@
                 {{#each phrases}}
                   <li data-theme="c">
                       <a href="#" data-phrase="{{swahili}}" rel="phrase">
-                        {{swahili}}<br />
-                        {{english}}
+                          <span class="swahili">{{swahili}}</span><br>
+                          <span class="english">{{english}}</span>
                       </a>
                       <div rel="explanation"></div>
                   </li>
