@@ -87,6 +87,12 @@ $(document).on('click', '#phrases a[rel=phrase]', function(e) {
 
   var phraseTitle = $(this).data('phrase');
   var phrase = findPhrase(phraseTitle);
+  var explanation = $(this).next('[rel=explanation]');
 
-  $(this).next('[rel=explanation]').html(phraseHtml(phrase));
+  if(explanation.html() == "") {
+    explanation.html(phraseHtml(phrase));
+  }
+  else {
+    explanation.html("");
+  }
 });
