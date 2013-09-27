@@ -23,11 +23,12 @@ a {
 }
 
 #homepage .swahili {
-	margin-top: -5px;
+	margin-top: 0;
 }
 
 #homepage .english {
-	margin-top: -17px;
+	margin-top: -15px;
+	margin-bottom: 7px;
 }
 
 .ui-link {
