@@ -30,8 +30,8 @@ var content = {
 var navHtml = categoriesTemplate(content);
 
 var wordlistHtml = wordlistTemplate({
-  phrases: content.categories["salamz"]["phrases"]
+  phrases: content.categories["food"]["phrases"]
 });
 
-// $('#categories').html(navHtml);
-$('#categories').html(wordlistHtml);
+$('body').append(navHtml);
+$('body').append(wordlistHtml);

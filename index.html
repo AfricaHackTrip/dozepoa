@@ -7,9 +7,6 @@
   </head>
   <body>
 
-    <div id="categories">
-    </div>
-
     <script id="nav-template" type="text/x-handlebars">
       <div data-role="page" id="homepage">
           <div data-theme="a" data-role="header">
@@ -19,9 +16,11 @@
              <div class="ui-grid-a">
                 {{#each categories}}
                   <div class="ui-block-{{gridPosition}}">
-                    <img src="{{icon}}"/>
-                    <p><strong>{{title}}</strong></p>
-                    <p>{{english_title}}</p>
+                    <a href="#wordlist" data-transition="slide">
+                      <img src="{{icon}}"/>
+                      <p><strong>{{title}}</strong></p>
+                      <p>{{english_title}}</p>
+                    </a>
                   </div>
                 {{/each}}
               </div>
