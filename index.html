@@ -7,6 +7,12 @@
   </head>
   <body>
 
+    <div id="homepage-container">
+    </div>
+
+    <div id="wordlist-container">
+    </div>
+
     <script id="nav-template" type="text/x-handlebars">
       <div data-role="page" id="homepage">
           <div data-theme="a" data-role="header">
@@ -16,7 +22,7 @@
              <div class="ui-grid-a">
                 {{#each categories}}
                   <div class="ui-block-{{gridPosition}}">
-                    <a href="#wordlist" data-transition="slide">
+                    <a href="#wordlist" data-transition="slide" data-category="{{name}}">
                       <img src="{{icon}}"/>
                       <p><strong>{{title}}</strong></p>
                       <p>{{english_title}}</p>
