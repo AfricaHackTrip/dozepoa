@@ -6,27 +6,34 @@ a {
 	text-decoration: none;
 }
 
+.ui-link img {
+	height: 50px;
+}
+
 .swahili, .english {
 	color: #000;
 }
 
 .swahili {
 	font-weight: bold;
-	font-size: 2em;
+}
+
+.english {
+	font-weight: normal;
 }
 
 #homepage .swahili {
-	line-height: 0;
-	margin-top: .8em;
+	margin-top: -5px;
 }
 
 #homepage .english {
-	line-height: 0;
+	margin-top: -17px;
 }
 
-.ui-block-a, .ui-block-b {
+.ui-link {
+	display: block;
 	background-color: #fff;
-	padding: 20px 30px;
+	padding: 5px 0 0;
 	margin: 0 0 15px;
 	text-align: center;
 	border-radius: 3px;
