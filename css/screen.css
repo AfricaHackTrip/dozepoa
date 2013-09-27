@@ -2,9 +2,12 @@ body {
   font-family: Ubuntu;
 }
 
+a {
+	text-decoration: none;
+}
+
 .swahili, .english {
 	color: #000;
-	text-decoration: none !important;
 }
 
 .swahili {
