@@ -253,7 +253,7 @@ Dozepoa.phrases = function(language, categoryName) {
       mainLanguagePhrase: phrase[language],
       secondLanguagePhrase: phrase['english'],
       answer: phrase.answer,
-      explanation: phrase.explanation
+      explanation: phrase.explanation || '...'
     };
   });
 
