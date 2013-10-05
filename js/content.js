@@ -10,8 +10,8 @@ Dozepoa.content = {
   categories: [{
     name: "salamz",
     swahili: 'Salamz',
-    luganda: 'Category Luganda',
-    lugbara: 'Category Lugbara',
+    luganda: 'Okubuuza',
+    lugbara: 'Zita',
     english: 'Greetings',
     gridPosition: "a",
     phrases: [
@@ -20,73 +20,81 @@ Dozepoa.content = {
         luganda: "Oli otya",
         lugbara: "Mi ngoni",
         english: "How are you?",
-        answer: ["Poa - Cool", "Niko poa - I'm fine"],
+        // answer: ["Poa - Cool", "Niko poa - I'm fine", luganda "Gyendi" lugbara "mamuke"],
         explanation: "maybe the most common greeting to start a great conversation"
       },
       {
         swahili: "Sasa",
-        luganda: "Oli otya",
-        lugbara: "Mi ngoni",
+        luganda: "nkulamusiza",
+        lugbara: "Ikini",
         english: "Hi",
-        answer: ["Poa - Cool", "Niko poa - I'm fine"],
+        // answer: ["Poa - Cool", "Niko poa - I'm fine", lugbara "Eyo aziyo"],
         explanation: "the most common greeting if you do not want to start a conversation"
       },
       {
         swahili: "Niaje",
-        luganda: "Oli otya",
+        luganda: "Bigenda bitya",
         lugbara: "Mi ngoni",
         english: "How is it?",
-        answer: ["Poa - Cool", "Niko poa - I'm fine"],
+        // answer: ["Poa - Cool", "Niko poa - I'm fine", luganda: "Birungi"],
         explanation: "checking on someone else"
       },
       {
         swahili: "Sasa niaje",
-        luganda: "Oli otya",
+        luganda: "Biri bitya kati",
         lugbara: "Mi ngoni",
         english: "Hey, how is it now?",
-        answer: ["Poa - Cool", "Niko poa - I'm fine"],
-        explanation: ""
+        // answer: ["Poa - Cool", "Niko poa - I'm fine", luganda "Birungi" lugbara "mamuke"],
+        explanation: "checking how things are"
+      },
+      {
+        swahili: "Niaje",
+        luganda: "Gundi ali atya",
+        lugbara: "Mi ngoni",
+        english: "How is it?",
+        // answer: ["Poa - Cool", "Niko poa - I'm fine", luganda: "Gyali mulungi"],
+        explanation: "checking on someone else"
       }
     ]
   },
   {
     name: "food",
     swahili: 'Dish',
-    luganda: 'Category Luganda',
-    lugbara: 'Category Lugbara',
+    luganda: 'Emmere',
+    lugbara: 'Enya',
     english: 'Food and Drinks',
     gridPosition: "b",
     phrases: [
       {
         swahili: "Nini iko?",
-        luganda: "Oli otya",
-        lugbara: "Mi ngoni",
+        luganda: "kiki ekiri ku menu",
+        lugbara: "Menu madria aduni",
         english: "What's on the menu?",
-        answer: [],
+        // answer: [],
         explanation: ""
       },
       {
         swahili: "Mko na nini leo?",
-        luganda: "Oli otya",
-        lugbara: "Mi ngoni",
+        luganda: "Kyanjawulo ki kyetulya leero",
+        lugbara: "Enya amani nya andru aduni",
         english: "What's on the special of today?",
-        answer: [],
+        // answer: [],
         explanation: ""
       },
       {
         swahili: "Kuna beer",
-        luganda: "Oli otya",
-        lugbara: "Mi ngoni",
+        luganda: "Bampeyo beer emu",
+        lugbara: "Iffe mani ewa",
         english: "Can I have a beer",
-        answer: [],
+        // answer: [],
         explanation: ""
       },
       {
         swahili: "Kuna soda",
-        luganda: "Oli otya",
-        lugbara: "Mi ngoni",
+        luganda: "Waliwo soda",
+        lugbara: "Soda ci",
         english: "Is there soda?",
-        answer: [],
+        // answer: [],
         explanation: ""
       }
     ]
@@ -94,25 +102,25 @@ Dozepoa.content = {
   {
     name: "directions",
     swahili: 'Kusaka',
-    luganda: 'Category Luganda',
-    lugbara: 'Category Lugbara',
+    luganda: 'Endagiriro',
+    lugbara: "Angwaziga",
     english: 'Directions',
     gridPosition: "a",
     phrases: [
       {
         swahili: "Naeza fika vipi [your place]?",
-        luganda: "Oli otya",
-        lugbara: "Mi ngoni",
+        luganda: "Ntuuka ntya ewuwo",
+        lugbara: "Ale mumidi",
         english: "How do I get to [your place]?",
-        answer: [],
+        // answer: [],
         explanation: ""
       },
       {
         swahili: "[place] iko wapi",
-        luganda: "Oli otya",
-        lugbara: "Mi ngoni",
+        luganda: "Kiri wa",
+        lugbara: "Angu ngonga",
         english: "Where is [place]?",
-        answer: [],
+        // answer: [],
         explanation: ""
       }
     ]
@@ -120,7 +128,7 @@ Dozepoa.content = {
   {
     name: "whatthe",
     swahili: 'Ei...?!',
-    luganda: 'Category Luganda',
+    luganda: 'Banange',
     lugbara: 'Category Lugbara',
     english: 'What the..?!',
     gridPosition: "b",
@@ -130,7 +138,7 @@ Dozepoa.content = {
         luganda: "Oli otya",
         lugbara: "Mi ngoni",
         english: "What the...?",
-        answer: [],
+        // answer: [],
         explanation: ""
       },
       {
@@ -138,57 +146,57 @@ Dozepoa.content = {
         luganda: "Oli otya",
         lugbara: "Mi ngoni",
         english: "ouch!",
-        answer: [],
+        // answer: [],
         explanation: ""
       },
       {
         swahili: "wa wa wa",
-        luganda: "Oli otya",
-        lugbara: "Mi ngoni",
+        luganda: "Katonda wange!",
+        lugbara: "Adrongaa...",
         english: "expresion of being surprised",
-        answer: [],
+        // answer: [],
         explanation: ""
       },
       {
         swahili: "Kwenda uko",
-        luganda: "Oli otya",
-        lugbara: "Mi ngoni",
+        luganda: "Genda eri",
+        lugbara: "Imule",
         english: "get outta here",
-        answer: [],
+        // answer: [],
         explanation: ""
       }
     ]
   },
   {
     name: "shopping",
-    swahili: 'Ku-shop',
-    luganda: 'Category Luganda',
-    lugbara: 'Category Lugbara',
+    swahili: "Ku-shop",
+    luganda: 'Kushopinga',
+    lugbara: 'ma mu makokiba',
     english: 'Shopping',
     gridPosition: "a",
     phrases: [
       {
-        swahili: "[fish] ni how much?",
-        luganda: "Oli otya",
-        lugbara: "Mi ngoni",
+        swahili: "[fish] samaki niyangapi?",
+        luganda: "Ekyenyanja kyammeka",
+        lugbara: "ebbi mi zingoni?",
         english: "how much is the [fish]?",
-        answer: [],
-        explanation: "yes, it is really kind english"
+        // answer: [],
+        explanation: "asking how much the fish is"
       },
       {
         swahili: "[fish] ina uzwa ngapi?",
         luganda: "Oli otya",
         lugbara: "Mi ngoni",
         english: "how much is the [fish]?",
-        answer: [],
+        // answer: [],
         explanation: ""
       },
       {
-        swahili: "[fish] ni expe sana",
-        luganda: "Oli otya",
-        lugbara: "Mi ngoni",
+        swahili: "[fish] ni beyi kali",
+        luganda: "Ekyenyanja oki seera nnyo",
+        lugbara: "sente ambabamba",
         english: "That [fish] is way too expensive?",
-        answer: [],
+        // answer: [],
         explanation: ""
       }
     ]
@@ -196,33 +204,33 @@ Dozepoa.content = {
   {
     name: "pickup",
     swahili: 'Mambo m-super',
-    luganda: 'Category Luganda',
+    luganda: 'Okukwana',
     lugbara: 'Category Lugbara',
     english: 'Pickup lines',
     gridPosition: "b",
     phrases: [
       {
         swahili: "Mambo m-super",
-        luganda: "Oli otya",
+        luganda: "Ogambaki mumbeja",
         lugbara: "Mi ngoni",
         english: "Hey gorgeous",
-        answer: [],
+        // answer: [],
         explanation: "Only when adressing girls!"
       },
       {
-        swahili: "Mambo m-handsome",
-        luganda: "Oli otya",
-        lugbara: "Mi ngoni",
+        swahili: "ona semajje sweet?",
+        luganda: "Ki Owakabi",
+        lugbara: "",
         english: "Hey handsome",
-        answer: [],
+        // answer: ["Poa -", "sina noma", luganda "Tewali" lugbara "akozi yu"],
         explanation: "Only when adressing guys!"
       },
       {
-        swahili: "We ni kuitaje?",
-        luganda: "Oli otya",
-        lugbara: "Mi ngoni",
+        swahili: " ni kuitaje?",
+        luganda: "Nkuyite ntya",
+        lugbara: "me munve ngoni?",
         english: "How do I call you?",
-        answer: [],
+        // answer: ["niyotaka", luganda "Ky'oyagala" lugbara "mileeli"],
         explanation: "to any gender"
       }
     ]
@@ -252,7 +260,7 @@ Dozepoa.phrases = function(language, categoryName) {
     return {
       mainLanguagePhrase: phrase[language],
       secondLanguagePhrase: phrase['english'],
-      answer: phrase.answer,
+      // answer: phrase.answer,
       explanation: phrase.explanation || '...'
     };
   });
