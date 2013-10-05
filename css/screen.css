@@ -48,3 +48,15 @@ a {
 .ui-block-b {
 	margin-left: 15px;
 }
+
+.ui-btn-inner .explanation {
+  display: block;
+  padding-top: 10px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.ui-li .ui-btn-text a.ui-link-inherit, .ui-btn-inner {
+  white-space: normal;
+  overflow: visible;
+}

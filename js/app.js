@@ -2,7 +2,7 @@ var categoriesTemplate = Handlebars.compile($('#nav-template').html());
 var phrasesTemplate    = Handlebars.compile($('#phrases-template').html());
 var phraseTemplate     = Handlebars.compile($('#phrase-template').html());
 
-var navHtml = categoriesTemplate(Dozepoa.categories('swahili'));
+var navHtml = categoriesTemplate(Dozepoa.categories('luganda'));
 
 var phrasesHtml = phrasesTemplate({
   phrases: Dozepoa.content.categories[0]["phrases"]
@@ -10,23 +10,12 @@ var phrasesHtml = phrasesTemplate({
 
 var phrasesHtmlForCategory = function(categoryName) {
   var category = _.findWhere(Dozepoa.content.categories, {name: categoryName});
-  var phrases  = Dozepoa.phrases('lugbara', categoryName);
+  var phrases  = Dozepoa.phrases('luganda', categoryName);
 
   return phrasesTemplate({
     phrases: phrases,
     title: category.title
   });
-};
-
-var findPhrase = function(swahili) {
-  return _.chain(Dozepoa.content.categories)
-    .map(function(category) {
-      return category.phrases;
-    })
-    .flatten()
-    .find(function(phrase) {
-      return phrase.swahili === swahili;
-    }).value();
 };
 
 var phraseHtml = function(phrase) {
@@ -45,15 +34,5 @@ $('#homepage a').on("click", function(){
 
 $(document).on('click', '#phrases a[rel=phrase]', function(e) {
   e.preventDefault();
-
-  var phraseTitle = $(this).data('phrase');
-  var phrase = findPhrase(phraseTitle);
-  var explanation = $(this).next('[rel=explanation]');
-
-  if(explanation.html() === "") {
-    explanation.html(phraseHtml(phrase));
-  }
-  else {
-    explanation.html("");
-  }
+  $(this).children('.explanation').first().slideToggle('fast');
 });
