@@ -22,7 +22,7 @@
                   <div class="ui-block-{{gridPosition}}">
                     <a href="#phrases" data-transition="slide" data-category="{{name}}">
                       <img src="img/{{name}}.svg"/>
-                      <p class="swahili">{{swahili}}</p>
+                      <p class="main-language">{{categoryName}}</p>
                       <p class="english">{{english}}</p>
                     </a>
                   </div>
@@ -41,14 +41,14 @@
               <a href="#homepage" data-transition="slide" data-rel="back">
                   Overview
               </a>
-              <h3>{{swahili}}</h3>
+              <h3>{{categoryName}}</h3>
           </div>
           <div data-role="content">
               <ul data-role="listview" data-divider-theme="b" data-inset="true">
                 {{#each phrases}}
                   <li data-theme="c">
                       <a href="#" data-phrase="{{swahili}}" rel="phrase">
-                          <span class="swahili">{{swahili}}</span><br>
+                          <span class="main-language">{{swahili}}</span><br>
                           <span class="english">{{english}}</span>
                       </a>
                       <div rel="explanation"></div>

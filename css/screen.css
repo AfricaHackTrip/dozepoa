@@ -10,11 +10,11 @@ a {
 	height: 50px;
 }
 
-.swahili, .english {
+.main-language, .english {
 	color: #000;
 }
 
-.swahili {
+.main-language {
 	font-weight: bold;
 }
 
@@ -22,7 +22,7 @@ a {
 	font-weight: normal;
 }
 
-#homepage .swahili {
+#homepage .main-language {
 	margin-top: 0;
 }
 

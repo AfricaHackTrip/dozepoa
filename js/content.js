@@ -1,5 +1,11 @@
 var Dozepoa = {};
 
+Dozepoa.languages = {
+  swahili: 'Swahili',
+  luganda: 'Luganda',
+  lugbara: 'Lugbara'
+};
+
 Dozepoa.content = {
   categories: [{
     name: "salamz",
