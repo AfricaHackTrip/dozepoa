@@ -37,3 +37,5 @@ $(document).on('click', '#phrases a[rel=phrase]', function(e) {
   $(this).children('.explanation').first().slideToggle('fast');
   $(this).parents('.ui-btn-inner').children('.ui-icon').toggleClass('ui-icon-arrow-d');
 });
+
+FastClick.attach(document.body);
