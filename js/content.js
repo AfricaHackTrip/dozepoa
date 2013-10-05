@@ -2,7 +2,7 @@ var Dozepoa = {};
 
 Dozepoa.content = {
   categories: [
-    {name: "salamz", title: 'Salamz', english_title: 'Greetings', gridPosition: "a", phrases: [
+    {name: "salamz", swahili: 'Salamz', english: 'Greetings', gridPosition: "a", phrases: [
       {
         swahili: "Mambo",
         luganda: "Oli otya",
@@ -36,7 +36,7 @@ Dozepoa.content = {
         explanation: ""
       }
     ]},
-    {name: "food", title: 'Dish', english_title: 'Food and Drinks', gridPosition: "b", phrases: [
+    {name: "food", swahili: 'Dish', english: 'Food and Drinks', gridPosition: "b", phrases: [
       {
         swahili: "Nini iko?",
         luganda: "Oli otya",
@@ -70,7 +70,7 @@ Dozepoa.content = {
         explanation: ""
       }
     ]},
-    {name: "directions", title: 'Kusaka', english_title: 'Directions', gridPosition: "a", phrases: [
+    {name: "directions", swahili: 'Kusaka', english: 'Directions', gridPosition: "a", phrases: [
       {
         swahili: "Naeza fika vipi [your place]?",
         luganda: "Oli otya",
@@ -88,7 +88,7 @@ Dozepoa.content = {
         explanation: ""
       }
     ]},
-    {name: "whatthe", title: 'Ei...?!', english_title: 'What the..?!', gridPosition: "b", phrases: [
+    {name: "whatthe", swahili: 'Ei...?!', english: 'What the..?!', gridPosition: "b", phrases: [
       {
         swahili: "Ei...",
         luganda: "Oli otya",
@@ -122,7 +122,7 @@ Dozepoa.content = {
         explanation: ""
       }
     ]},
-    {name: "shopping", title: 'Ku-shop', english_title: 'Shopping', gridPosition: "a", phrases: [
+    {name: "shopping", swahili: 'Ku-shop', english: 'Shopping', gridPosition: "a", phrases: [
       {
         swahili: "[fish] ni how much?",
         luganda: "Oli otya",
@@ -148,7 +148,7 @@ Dozepoa.content = {
         explanation: ""
       }
     ]},
-    {name: "pickup", title: 'Mambo m-super', english_title: 'Pickup lines',gridPosition: "b", phrases: [
+    {name: "pickup", swahili: 'Mambo m-super', english: 'Pickup lines',gridPosition: "b", phrases: [
       {
         swahili: "Mambo m-super",
         luganda: "Oli otya",
