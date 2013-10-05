@@ -14,7 +14,7 @@ var phrasesHtmlForCategory = function(categoryName) {
 
   return phrasesTemplate({
     phrases: phrases,
-    title: category.title
+    categoryName: category['luganda']
   });
 };
 
