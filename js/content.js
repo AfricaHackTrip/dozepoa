@@ -246,7 +246,16 @@ Dozepoa.categories = function(language) {
 };
 
 Dozepoa.phrases = function(language, categoryName) {
+  var category = _.findWhere(Dozepoa.content.categories, {name: categoryName});
 
+  var languagePhrases = _.map(category.phrases, function(phrase) {
+    return {
+      mainLanguagePhrase: phrase[language],
+      secondLanguagePhrase: phrase['english'],
+      answer: phrase.answer,
+      explanation: phrase.explanation
+    };
+  });
 
-  return phrases;
+  return languagePhrases;
 };

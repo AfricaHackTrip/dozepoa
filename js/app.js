@@ -9,12 +9,11 @@ var phrasesHtml = phrasesTemplate({
 });
 
 var phrasesHtmlForCategory = function(categoryName) {
-  var category = $.grep( Dozepoa.content.categories, function( category, index ) {
-    return category.name === categoryName;
-  })[0];
+  var category = _.findWhere(Dozepoa.content.categories, {name: categoryName});
+  var phrases  = Dozepoa.phrases('lugbara', categoryName);
 
   return phrasesTemplate({
-    phrases: category.phrases,
+    phrases: phrases,
     title: category.title
   });
 };
