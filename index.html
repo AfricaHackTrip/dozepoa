@@ -18,12 +18,12 @@
            </div>
            <div data-role="content">
              <div class="ui-grid-a">
-                {{#each categories}}
+                {{#each this}}
                   <div class="ui-block-{{gridPosition}}">
                     <a href="#phrases" data-transition="slide" data-category="{{name}}">
                       <img src="img/{{name}}.svg"/>
-                      <p class="main-language">{{categoryName}}</p>
-                      <p class="english">{{english}}</p>
+                      <p class="main-language">{{mainLanguageName}}</p>
+                      <p class="english">{{secondLanguageName}}</p>
                     </a>
                   </div>
                 {{/each}}

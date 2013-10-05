@@ -228,3 +228,25 @@ Dozepoa.content = {
     ]
   }]
 };
+
+Dozepoa.categories = function(language) {
+  var languageCategories = [];
+
+  _.each(Dozepoa.content.categories, function(category) {
+    var languageCategory = {
+      name: category.name,
+      mainLanguageName: category[language],
+      secondLanguageName: category['english'],
+      gridPosition: category.gridPosition,
+    };
+    languageCategories.push(languageCategory);
+  });
+
+  return languageCategories;
+};
+
+Dozepoa.phrases = function(language, categoryName) {
+
+
+  return phrases;
+};

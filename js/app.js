@@ -1,8 +1,8 @@
 var categoriesTemplate = Handlebars.compile($('#nav-template').html());
-var phrasesTemplate = Handlebars.compile($('#phrases-template').html());
-var phraseTemplate = Handlebars.compile($('#phrase-template').html());
+var phrasesTemplate    = Handlebars.compile($('#phrases-template').html());
+var phraseTemplate     = Handlebars.compile($('#phrase-template').html());
 
-var navHtml = categoriesTemplate(Dozepoa.content);
+var navHtml = categoriesTemplate(Dozepoa.categories('swahili'));
 
 var phrasesHtml = phrasesTemplate({
   phrases: Dozepoa.content.categories[0]["phrases"]
