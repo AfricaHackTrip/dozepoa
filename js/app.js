@@ -1,8 +1,8 @@
-var categoriesTemplate = Handlebars.compile($('#nav-template').html());
-var phrasesTemplate    = Handlebars.compile($('#phrases-template').html());
-var phraseTemplate     = Handlebars.compile($('#phrase-template').html());
+var categoriesTemplate   = Handlebars.compile($('#nav-template').html());
+var phrasesTemplate      = Handlebars.compile($('#phrases-template').html());
+var phraseTemplate       = Handlebars.compile($('#phrase-template').html());
 
-var navHtml = categoriesTemplate(Dozepoa.categories('luganda'));
+var navHtml = categoriesTemplate(Dozepoa.categories(Dozepoa.currentLanguage));
 
 var phrasesHtml = phrasesTemplate({
   phrases: Dozepoa.content.categories[0]["phrases"]
@@ -10,11 +10,11 @@ var phrasesHtml = phrasesTemplate({
 
 var phrasesHtmlForCategory = function(categoryName) {
   var category = _.findWhere(Dozepoa.content.categories, {name: categoryName});
-  var phrases  = Dozepoa.phrases('luganda', categoryName);
+  var phrases  = Dozepoa.phrases(Dozepoa.currentLanguage, categoryName);
 
   return phrasesTemplate({
     phrases: phrases,
-    categoryName: category['luganda']
+    categoryName: category[Dozepoa.currentLanguage]
   });
 };
 
@@ -25,7 +25,7 @@ var phraseHtml = function(phrase) {
 $('body').append(navHtml);
 $('body').append(phrasesHtml);
 
-$('#homepage a').on("click", function(){
+$('#homepage .ui-grid-a a').on("click", function(){
   var categoryTitle = $(this).data('category');
 
   $('#phrases').remove();
@@ -39,3 +39,23 @@ $(document).on('click', '#phrases a[rel=phrase]', function(e) {
 });
 
 FastClick.attach(document.body);
+
+$('#language-menu').popup();
+
+$('#language-menu-button').on('click', function(e){
+  e.preventDefault();
+  $( "#language-menu").popup('open', {positionTo: "#language-menu"});
+
+  return false;
+});
+
+$('#language-menu li a').on('click', function(e){
+  e.preventDefault();
+  var language = $(this).data('language');
+  Dozepoa.currentLanguage = language;
+
+  location.href = "index.html?language=" + language;
+
+  // $('#homepage').remove();
+  // $('body').prepend(categoriesTemplate(Dozepoa.categories(Dozepoa.currentLanguage)));
+});

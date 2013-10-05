@@ -13,8 +13,18 @@
 
     <script id="nav-template" type="text/x-handlebars">
       <div data-role="page" id="homepage">
+          <div data-role="popup" id="language-menu" data-theme="a">
+            <ul data-role="listview" data-inset="true" data-theme="b">
+              <li><a href="#" data-language="swahili">Swahili</a></li>
+              <li><a href="#" data-language="luganda">Luganda</a></li>
+              <li><a href="#" data-language="lugbara">Lugbara</a></li>
+            </ul>
+          </div>
           <div data-theme="a" data-role="header">
             <h3>Doze Poa</h3>
+            <a id="language-menu-button" href="#language-menu" aria-haspopup="true" aria-owns="#language-menu" data-transition="slide" data-rel="popup" data-inline="true">
+              Language
+            </a>
            </div>
            <div data-role="content">
              <div class="ui-grid-a">

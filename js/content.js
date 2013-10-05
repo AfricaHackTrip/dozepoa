@@ -259,3 +259,18 @@ Dozepoa.phrases = function(language, categoryName) {
 
   return languagePhrases;
 };
+
+// FIXME ugly crap from the Interwebz
+var getParam = function(name) {
+  name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+  var regexS = "[\\?&]"+name+"=([^&#]*)";
+  var regex = new RegExp( regexS );
+  var results = regex.exec( window.location.href );
+  if( results == null )
+    return "";
+  else
+    return results[1];
+};
+console.log(getParam('language'));
+
+Dozepoa.currentLanguage = getParam('language') || 'swahili';
