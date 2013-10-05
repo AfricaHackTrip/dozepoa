@@ -1,4 +1,3 @@
-var Dozepoa = {};
 var categoriesTemplate = Handlebars.compile($('#nav-template').html());
 var phrasesTemplate = Handlebars.compile($('#phrases-template').html());
 var phraseTemplate = Handlebars.compile($('#phrase-template').html());
