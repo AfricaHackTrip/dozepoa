@@ -1,8 +1,14 @@
 var Dozepoa = {};
 
 Dozepoa.content = {
-  categories: [
-    {name: "salamz", swahili: 'Salamz', english: 'Greetings', gridPosition: "a", phrases: [
+  categories: [{
+    name: "salamz",
+    swahili: 'Salamz',
+    luganda: 'Category Luganda',
+    lugbara: 'Category Lugbara',
+    english: 'Greetings',
+    gridPosition: "a",
+    phrases: [
       {
         swahili: "Mambo",
         luganda: "Oli otya",
@@ -35,8 +41,16 @@ Dozepoa.content = {
         answer: ["Poa - Cool", "Niko poa - I'm fine"],
         explanation: ""
       }
-    ]},
-    {name: "food", swahili: 'Dish', english: 'Food and Drinks', gridPosition: "b", phrases: [
+    ]
+  },
+  {
+    name: "food",
+    swahili: 'Dish',
+    luganda: 'Category Luganda',
+    lugbara: 'Category Lugbara',
+    english: 'Food and Drinks',
+    gridPosition: "b",
+    phrases: [
       {
         swahili: "Nini iko?",
         luganda: "Oli otya",
@@ -69,8 +83,16 @@ Dozepoa.content = {
         answer: [],
         explanation: ""
       }
-    ]},
-    {name: "directions", swahili: 'Kusaka', english: 'Directions', gridPosition: "a", phrases: [
+    ]
+  },
+  {
+    name: "directions",
+    swahili: 'Kusaka',
+    luganda: 'Category Luganda',
+    lugbara: 'Category Lugbara',
+    english: 'Directions',
+    gridPosition: "a",
+    phrases: [
       {
         swahili: "Naeza fika vipi [your place]?",
         luganda: "Oli otya",
@@ -87,8 +109,16 @@ Dozepoa.content = {
         answer: [],
         explanation: ""
       }
-    ]},
-    {name: "whatthe", swahili: 'Ei...?!', english: 'What the..?!', gridPosition: "b", phrases: [
+    ]
+  },
+  {
+    name: "whatthe",
+    swahili: 'Ei...?!',
+    luganda: 'Category Luganda',
+    lugbara: 'Category Lugbara',
+    english: 'What the..?!',
+    gridPosition: "b",
+    phrases: [
       {
         swahili: "Ei...",
         luganda: "Oli otya",
@@ -121,8 +151,16 @@ Dozepoa.content = {
         answer: [],
         explanation: ""
       }
-    ]},
-    {name: "shopping", swahili: 'Ku-shop', english: 'Shopping', gridPosition: "a", phrases: [
+    ]
+  },
+  {
+    name: "shopping",
+    swahili: 'Ku-shop',
+    luganda: 'Category Luganda',
+    lugbara: 'Category Lugbara',
+    english: 'Shopping',
+    gridPosition: "a",
+    phrases: [
       {
         swahili: "[fish] ni how much?",
         luganda: "Oli otya",
@@ -147,8 +185,16 @@ Dozepoa.content = {
         answer: [],
         explanation: ""
       }
-    ]},
-    {name: "pickup", swahili: 'Mambo m-super', english: 'Pickup lines',gridPosition: "b", phrases: [
+    ]
+  },
+  {
+    name: "pickup",
+    swahili: 'Mambo m-super',
+    luganda: 'Category Luganda',
+    lugbara: 'Category Lugbara',
+    english: 'Pickup lines',
+    gridPosition: "b",
+    phrases: [
       {
         swahili: "Mambo m-super",
         luganda: "Oli otya",
@@ -173,6 +219,6 @@ Dozepoa.content = {
         answer: [],
         explanation: "to any gender"
       }
-    ]}
-  ]
+    ]
+  }]
 };
