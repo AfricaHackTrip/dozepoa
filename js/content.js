@@ -70,7 +70,7 @@ Dozepoa.content = {
         luganda: "kiki ekiri ku menu",
         lugbara: "Menu madria aduni",
         english: "What's on the menu?",
-        // answer: [],
+        // answer: ["kila kitu, buli kimu, ako piri"],
         explanation: ""
       },
       {
@@ -82,17 +82,17 @@ Dozepoa.content = {
         explanation: ""
       },
       {
-        swahili: "Kuna beer",
+        swahili: "hiko beer",
         luganda: "Bampeyo beer emu",
-        lugbara: "Iffe mani ewa",
+        lugbara: "Iffe mani iwa",
         english: "Can I have a beer",
-        // answer: [],
+        // answer: [ndeo,ka ndeete,majila],
         explanation: ""
       },
       {
-        swahili: "Kuna soda",
+        swahili: "hiko soda",
         luganda: "Waliwo soda",
-        lugbara: "Soda ci",
+        lugbara: "Soda chi",
         english: "Is there soda?",
         // answer: [],
         explanation: ""
@@ -103,7 +103,7 @@ Dozepoa.content = {
     name: "directions",
     swahili: 'Kusaka',
     luganda: 'Endagiriro',
-    lugbara: "Angwaziga",
+    lugbara: "pala engwa",
     english: 'Directions',
     gridPosition: "a",
     phrases: [
