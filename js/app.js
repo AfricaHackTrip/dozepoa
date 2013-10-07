@@ -40,22 +40,10 @@ $(document).on('click', '#phrases a[rel=phrase]', function(e) {
 
 FastClick.attach(document.body);
 
-$('#language-menu').popup();
-
-$('#language-menu-button').on('click', function(e){
-  e.preventDefault();
-  $( "#language-menu").popup('open', {positionTo: "#language-menu"});
-
-  return false;
-});
-
-$('#language-menu li a').on('click', function(e){
+$('#language-switcher li a').on('click', function(e){
   e.preventDefault();
   var language = $(this).data('language');
   Dozepoa.currentLanguage = language;
 
   location.href = "index.html?language=" + language;
-
-  // $('#homepage').remove();
-  // $('body').prepend(categoriesTemplate(Dozepoa.categories(Dozepoa.currentLanguage)));
 });
