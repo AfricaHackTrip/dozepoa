@@ -2,7 +2,10 @@ var categoriesTemplate   = Handlebars.compile($('#nav-template').html());
 var phrasesTemplate      = Handlebars.compile($('#phrases-template').html());
 var phraseTemplate       = Handlebars.compile($('#phrase-template').html());
 
-var navHtml = categoriesTemplate(Dozepoa.categories(Dozepoa.currentLanguage));
+var navHtml = categoriesTemplate({
+  categories: Dozepoa.categories(Dozepoa.currentLanguage),
+  currentLanguage: Dozepoa.languages[Dozepoa.currentLanguage]
+});
 
 var phrasesHtml = phrasesTemplate({
   phrases: Dozepoa.content.categories[0]["phrases"]

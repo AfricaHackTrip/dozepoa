@@ -15,7 +15,7 @@
           <div data-theme="a" data-role="header">
             <h3><img src="img/logo.svg" alt="Doze Poa"></h3>
             <a id="language-switcher-button" href="#language-switcher" aria-haspopup="true" aria-owns="#language-menu" data-transition="pop" data-rel="popup" data-inline="true">
-              Language
+              {{currentLanguage}}
             </a>
            </div>
            <div data-role="content">
@@ -27,7 +27,7 @@
                </ul>
              </div>
              <div class="ui-grid-a">
-                {{#each this}}
+                {{#each categories}}
                   <div class="ui-block-{{gridPosition}}">
                     <a href="#phrases" data-transition="slide" data-category="{{name}}">
                       <img src="img/{{name}}.svg"/>
