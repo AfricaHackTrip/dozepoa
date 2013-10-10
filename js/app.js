@@ -1,6 +1,5 @@
 var categoriesTemplate   = Handlebars.compile($('#nav-template').html());
 var phrasesTemplate      = Handlebars.compile($('#phrases-template').html());
-var phraseTemplate       = Handlebars.compile($('#phrase-template').html());
 
 var navHtml = categoriesTemplate({
   categories: Dozepoa.categories(Dozepoa.currentLanguage),
@@ -19,10 +18,6 @@ var phrasesHtmlForCategory = function(categoryName) {
     phrases: phrases,
     categoryName: category[Dozepoa.currentLanguage]
   });
-};
-
-var phraseHtml = function(phrase) {
-  return phraseTemplate(phrase);
 };
 
 $('body').append(navHtml);
