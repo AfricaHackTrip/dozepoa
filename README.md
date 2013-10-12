@@ -1,4 +1,5 @@
-dozepoa
-=======
+Doze Poa
+========
 
-Doze Poa, the Swahili slang phrasebook! Speak Swahili like a local.
+Doze Poa, the East-Africa slang phrasebook! Speak Swahili, Luganda, and Lugbara
+like a local.
